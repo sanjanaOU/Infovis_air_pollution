@@ -1,0 +1,23 @@
+.pollutant-tabs {
+    display: flex;
+    overflow-x: auto;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    gap: 1rem;
+    white-space: nowrap;
+  }
+  
+  .pollutant-tab {
+    color: white;
+    padding: 0.5rem 1.2rem;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+  }
+  
+  .pollutant-tab:hover {
+    filter: brightness(0.85);
+  }
+  

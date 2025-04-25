@@ -1,0 +1,107 @@
+/* Universal Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Redundant rule cleaned */
+* {
+  box-sizing: border-box;
+}
+
+/* Base styles for html & body */
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background: transparent;
+  color: #333;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+
+
+/* Root container */
+#root {
+  min-height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  display: block; /* Prevent center-alignment issue */
+}
+
+/* Typography */
+h1, h2 {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+/* Buttons */
+button {
+  background-color: #0088FE;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #005bb5;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Inputs and form elements */
+input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Chart layout */
+.charts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.meters {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Blur background for chart cards */
+.chart-bg-blur {
+  backdrop-filter: blur(10px);
+  /* Optional white frosted-glass effect */
+  border-radius: 8px;
+  padding: 1rem;
+  position: relative;
+  z-index: 2;
+}

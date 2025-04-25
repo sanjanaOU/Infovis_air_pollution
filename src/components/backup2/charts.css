@@ -1,0 +1,120 @@
+.chart-title {
+    text-align: center;
+    font-size: 8px;
+    color: #5b1dd6;
+    margin-bottom: 10px;
+  }
+  
+  .table-container {
+    max-height: 450px;
+    overflow-y: auto;
+    margin-top: 1rem;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    padding: 0.5rem;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+  
+  .styled-table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 13px;
+  }
+  
+  .styled-table thead {
+    background-color: cyan;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .styled-table th,
+  .styled-table td {
+    border: 1px solid #ccc;
+    padding: 4px;
+    text-align: center;
+  }
+  
+  .styled-table tbody tr:nth-child(even) {
+    background-color: #e0f7fa;
+  }
+  
+  .styled-table tbody tr:hover {
+    background-color: #b2ebf2;
+  }
+  
+  /* Existing styles */
+/* Existing styles */
+
+/* Existing styles */
+/* Existing styles */
+/* Existing styles */
+.axis {
+    font-size: 12px;
+  }
+  
+  .table-container {
+    margin-top: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  .styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  
+  .styled-table th,
+  .styled-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .styled-table th {
+    background-color: #f2f2f2;
+    position: sticky;
+    top: 0;
+  }
+  
+  .styled-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .styled-table tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  /* Dropdown styles */
+  .dropdown-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px 0;
+  }
+  
+  .dropdown {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    min-width: 120px;
+  }
+  
+  .dropdown:hover {
+    border-color: #888;
+  }
+  
+  .dropdown:focus {
+    border-color: #00bcd4;
+    box-shadow: 0 0 5px rgba(0, 188, 212, 0.5);
+  }
+  
+  .dropdown option {
+    background-color: #fff;
+    color: #333;
+  }

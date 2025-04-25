@@ -1,0 +1,68 @@
+
+  
+  .image-button-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-top: 30px;
+  }
+  
+  .image-button-custom {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .image-button-custom:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  }
+  
+  .image-button-custom:active {
+    transform: translateY(0);
+  }
+  
+  .button-image {
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-button-custom:hover .button-image {
+    transform: scale(1.1);
+  }
+  
+  .button-title {
+    font-size: 18px;
+    color: white;
+    margin-top: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+  }
+  
+  .image-button-custom:hover .button-title {
+    opacity: 1;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

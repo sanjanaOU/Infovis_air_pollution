@@ -1,0 +1,54 @@
+.aqi-container {
+  padding: 2rem;
+  text-align: center;
+}
+
+.aqi-title {
+  font-size: 2rem;
+  color: #1e3a8a;
+  font-weight: bold;
+}
+
+.aqi-filename {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #374151;
+}
+
+.meter-wrapper {
+  margin: 3rem auto 0;
+  width: 300px;
+  height: 180px;
+  position: relative;
+}
+
+.semi-arc {
+  width: 100%;
+  height: auto;
+}
+
+.label-text {
+  fill: #374151;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-anchor: middle;
+}
+
+.needle {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  height: 90px;
+  background-color: #1e293b;
+  transform-origin: bottom center;
+  transform: rotate(0deg);
+  transition: transform 1s ease-in-out;
+  z-index: 2;
+}
+
+.aqi-value-label {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  color: #1e293b;
+}

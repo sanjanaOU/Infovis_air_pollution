@@ -1,0 +1,76 @@
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 2rem;
+  padding: 2rem;
+  position: relative;
+  z-index: 2; /* Ensure content is above Vanta */
+}
+
+.metric-card {
+  background-color: #333;
+  color: white;
+  border-radius: 20px;
+  padding: 2rem;
+  min-height: 220px;
+  font-size: 1.2rem;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+.metric-card strong {
+  font-size: 1.6rem;
+  font-weight: 800;
+  display: block;
+  margin-bottom: 0.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.metric-card:hover {
+  transform: scale(1.03);
+}
+
+.pollutant-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: white;
+}
+
+.pollutant-metrics-container {
+  width: 100%;
+  min-height: 100vh;
+  background: transparent;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+
+.pollutant-metrics-container h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 1rem;
+}
+
+.pollutant-metrics-background {
+  background: transparent; /* Let Vanta show through */
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* .pollutant-card-grid assumed from App.css */

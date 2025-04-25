@@ -1,0 +1,49 @@
+.metric-card {
+    display: inline-block;
+    width: 250px;
+    margin-right: 1rem;
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: #d3d3d3; /* Outer background gray */
+    color: black; /* Text color for better contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    opacity: 0; /* Start hidden for animation */
+    transform: translateY(20px); /* Start with a slight vertical offset */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    padding-top: 1rem; /* Added padding to avoid overlapping text and chart */
+    animation: fadeInUp 0.6s forwards; /* Add fade-in and upward animation */
+    animation-delay: 0.2s; /* Delay animation for each card */
+  }
+  
+  .metric-card:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+  }
+  
+  .metric-card strong {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .metric-card p {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .metrics-row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 1rem 0;
+    box-sizing: border-box;
+  }
+  
+  /* Animation Keyframes for fadeInUp effect */
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateX(0); /* Final position */
+    }
+  }
+  
